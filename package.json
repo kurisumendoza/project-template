@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "babel-jest": "^29.7.0",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "eslint": "^8.2.0",
@@ -20,9 +22,11 @@
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "html-webpack-plugin": "^5.6.2",
+    "jest": "^29.7.0",
     "prettier": "^3.4.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.95.0",
